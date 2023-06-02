@@ -1,0 +1,82 @@
+{
+    "brands": {
+        "erigo": [
+            {
+                "id": "erigo-t-shirt-oversize-antelope-black",
+                "name": "Erigo T-Shirt Oversize Antelope Black",
+                "description": "The HD Oversize Erigo T-Shirt is currently the best choice for achieving a stylish look with high-quality products and a wide range of color options.",
+                "img_item": "",
+                "type": "Shirt",
+                "web_url": "https://erigostore.co.id/collections/all-product/products/erigo-t-shirt-oversize-antelope-black-unisex?variant=41301537358008"
+            },
+            {
+                "id": "erigo-short-shirt-jazlyn-black",
+                "name": "Erigo Short Shirt Jazlyn Black",
+                "description": " Motive Shirt Erigo ini menjadi memukau karena polanya yang dicetak dengan kombinasi warna yang menarik. Bagi Anda yang menyukai gaya edgy, ini adalah item yang harus dimiliki!",
+                "img_item": "",
+                "type": "Shirt",
+                "web_url": "https://erigostore.co.id/collections/all-product/products/erigo-short-shirt-jazlyn-black?variant=41507376169144"
+            },
+            {
+                "id": "erigo-coach-jacket-your-mind-black",
+                "name": "Erigo Coach Jacket Your Mind Black",
+                "description": "The Coach Jacket by Erigo features a unique printed design on the sleeves and back, with stunning colors that will make you feel energized",
+                "img_item": "",
+                "type": "Jacket",
+                "web_url": "https://erigostore.co.id/products/erigo-coach-jacket-your-mind-black?variant=41281720778936"
+            }
+        ],
+        "compass":[
+            {
+                "id": "gazelle-low-black-white",
+                "name": "Compass Gazelle Low Black White",
+                "description": "The original silhouette of Compass that started it all in 1998. Re-designed to combine classic vintage with modern details, the Gazelle Low is your ideal every day footwear.",
+                "img_item": "https://cms.sepatucompass.com/images/productdetail/82fee0dd9cb3f8a4fdb775287069dc9873b5fa42.png",
+                "type": "Shoes",
+                "web_url": "https://sepatucompass.com/shop/gazelle-low-black-white-43"
+            },
+            {
+                "id": "flight-jkt-low-101",
+                "name": "Compass Flight Jkt Low",
+                "description": "Compass® Retrograde Flight JKT edition is inspired by the jacket worn by air force pilots. Unused army green materials was sourced and repurposed to create an authentic and fresh take on an iconic military look.",
+                "img_item": "https://cms.sepatucompass.com/images/productdetail/4a94777eee55eacffb593e2b011c0d5460f40eef.png",
+                "type": "Shoes",
+                "web_url": "https://sepatucompass.com/shop/flight-jkt-low-101"
+            },
+            {
+                "id": "gazelle-low-black-gum-102",
+                "name": "Compass Gazelle Low Black Gum",
+                "description": "The original silhouette of Compass that started it all in 1998. Re-designed to combine classic vintage with modern details, the Gazelle Low is your ideal every day footwear.",
+                "img_item": "https://cms.sepatucompass.com/images/productdetail/6ebd14afe7e78277b8cba83cc1c4c1c1f212e118.png",
+                "type": "Shoes",
+                "web_url": "https://sepatucompass.com/shop/compass-gazelle-low-black-gum-102"
+            }
+        ],
+        "hijack-sandals": [
+            {
+                "id": "alto-orca",
+                "name": "Alto Orca",
+                "description": "Considered as OG of Hi Jack Sandals, the Alto Orca enhanced with Hi-Tact signature sole features with elastic paracord.",
+                "img_item": "https://hijacksandals.com/wp-content/uploads/2020/02/2022_Hijack-Sandals_Alto-Orca_Web-Catalogue_1-1024x1024.jpg",
+                "type": "Sandals",
+                "web_url": "https://hijacksandals.com/product/alto-orca/"
+            },
+            {
+                "id": "manic-rhea",
+                "name": "Rhea, the mother of goddesses, resembles the look of all black Manic that has effortless beauty.",
+                "description": "Rhea, the mother of goddesses, resembles the look of all black Manic that has effortless beauty.",
+                "img_item": "https://hijacksandals.com/wp-content/uploads/2020/03/1-9-600x600.jpg",
+                "type": "Sandals",
+                "web_url": "https://hijacksandals.com/product/manic-rhea/"
+            },
+            {
+                "id": "stellar-cerulean",
+                "name": "Stellar Cerulean",
+                "description": "Previously known as Shield, the Stellar is enhanced with new colorways and new Hi-Tex padding for maximum comfort.",
+                "img_item": "https://hijacksandals.com/wp-content/uploads/2020/02/hi-jack-sandals-stellar-cerulean-1-600x600.jpg",
+                "type": "Sandals",
+                "web_url": "https://hijacksandals.com/product/stellar-cerulean/"
+            }
+        ]
+    }
+}

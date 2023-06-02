@@ -38,6 +38,7 @@
     "workbox-webpack-plugin": "^6.5.4"
   },
   "dependencies": {
+    "express": "^4.18.2",
     "idb": "^7.1.1",
     "regenerator-runtime": "^0.13.9",
     "workbox-routing": "^6.5.4",

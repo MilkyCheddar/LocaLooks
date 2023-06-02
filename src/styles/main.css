@@ -118,48 +118,81 @@ body {
  * Jumbotron
  */
 
-.hero {
-  display: flex;
-  align-items: center;
-  min-height: 380px;
-  width: 100%;
-  text-align: center;
-  background-image: url("../public/images/ErigoBanner.jpg");
-  background-position: center;
-  color: rgb(224, 245, 63);
-  opacity: 0.8;
+ .content-item {
+  position: relative;
 }
 
-.heroInner {
-  margin: 0 auto;
-  max-width: 800px;
-}
-
-.carousel-item img {
+.content-item img {
+  transition: opacity 0.3s ease-in-out;
   width: 100%;
 }
 
-.carousel-item#erigoHero:hover img {
-  transition: ease-in 0.3s;
-  mask-image: linear-gradient(rgba(0, 0, 0, 1), transparent);
-  background: url("../public/images/erigoLogo.png") 0 0/33.333% auto no-repeat;
+.content-item:hover img {
+  opacity: 0.4;
 }
 
-.carousel-item#erigoHero:hover::after {
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper, nibh eu laoreet pharetra, tortor nisl tempus arcu, ac tempus leo elit vel dolor. Nullam et pellentesque velit. Cras malesuada purus sit amet pharetra fermentum. Etiam iaculis fringilla enim, ut rutrum odio venenatis et. In maximus, felis vitae malesuada congue, est nisl dictum mi, a mattis mauris augue et velit.";
-  display: block;
+.content-item#erigoHero:hover::before {
+  content: "";
+  text-align: right;
+  box-sizing: border-box;
+  vertical-align: middle;
   position: absolute;
-  bottom: 0;
+  top: 6rem;
   left: 0;
-  width: 100%;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  font-size: 14px;
-  line-height: 1.4;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  right: 0;
+  bottom: 0;
+  background-image: url("../public/images/erigoLogo.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+  width: 50%;
+  height: 50%;
+}
+
+.content-item#compassHero:hover::before {
+  content: "";
+  text-align: right;
+  box-sizing: border-box;
+  vertical-align: middle;
+  position: absolute;
+  top: 10rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../public/images/compassLogo.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+  width: 50%;
+  height: 50%;
+}
+
+.content-item#mdHero:hover::before {
+  content: "";
+  text-align: right;
+  box-sizing: border-box;
+  vertical-align: middle;
+  position: absolute;
+  top: 10rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../public/images/mdLogo.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+  width: 50%;
+  height: 50%;
+}
+
+.content-item:hover::before {
+  opacity: 1;
 }
 
 
