@@ -44,15 +44,21 @@ body {
   transition: min-height 0.3s;
 }
 
-.header__inner {
+.headerInner {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   justify-content: space-between;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  vertical-align: middle;
 }
 
-.header__menu {
+.headerLogo {
+  margin: 2rem 2rem 0 2rem;
+}
+.headerMenu {
   font-size: 32px;
   margin-left: auto;
   padding-right:3rem;
@@ -62,46 +68,46 @@ body {
   width: 30px;
   text-decoration: none;
 }
-.header__menu:focus, .header__menu:hover{
+.headerMenu:focus, .headerMenu:hover{
   color: green;
 }
-.header__title {
+.headerTitle {
   display: inline-block;
   font-weight: 300;
   font-size: 4em;
-  margin: 0.5em 0.25em;
+  margin:auto;
   color: #212121;
   text-align: left;
 }
 
-.nav {
-  display: inline-block;
+.navbar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center; /* Horizontal alignment */
+  align-items: center; /* Vertical alignment */
+  font-size: large;
   width: 100%;
   text-align: center;
-  vertical-align: middle;
 }
 
-.nav__list {
-  padding-top: 2.5rem;
-}
-
-.nav__item {
+.navItem {
   box-sizing: border-box;
   display: inline-block;
   width: 30%;
   text-align: center;
-  line-height: 30px;
+  line-height: 3rem;
+  vertical-align: middle;
   text-transform: uppercase;
 }
 
-.nav a {
+.navbar a {
   display: inline-block;
   padding: 1.3em;
   text-decoration: none;
   color: #616161;
 }
 
-.nav a:hover {
+.navbar a:hover {
   text-decoration: underline;
   color: #000;
 }
@@ -118,17 +124,43 @@ body {
   min-height: 380px;
   width: 100%;
   text-align: center;
-  background-image: url(".././public/images/heros/hero-image_4.jpg");
+  background-image: url("../public/images/ErigoBanner.jpg");
   background-position: center;
   color: rgb(224, 245, 63);
   opacity: 0.8;
 }
 
-.hero__inner {
+.heroInner {
   margin: 0 auto;
   max-width: 800px;
 }
 
+.carousel-item img {
+  width: 100%;
+}
+
+.carousel-item#erigoHero:hover img {
+  transition: ease-in 0.3s;
+  mask-image: linear-gradient(rgba(0, 0, 0, 1), transparent);
+  background: url("../public/images/erigoLogo.png") 0 0/33.333% auto no-repeat;
+}
+
+.carousel-item#erigoHero:hover::after {
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper, nibh eu laoreet pharetra, tortor nisl tempus arcu, ac tempus leo elit vel dolor. Nullam et pellentesque velit. Cras malesuada purus sit amet pharetra fermentum. Etiam iaculis fringilla enim, ut rutrum odio venenatis et. In maximus, felis vitae malesuada congue, est nisl dictum mi, a mattis mauris augue et velit.";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 
 
 /*
