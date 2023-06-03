@@ -1,11 +1,11 @@
-import Favorite from '../views/pages/favorite';
+import LIST from '../views/pages/brands-list';
 import Detail from '../views/pages/detail';
-import Home from '../views/pages/home';
+import HomePage from '../views/pages/home';
 
 const routes = {
-  '/': Home,
-  '/home': Home,
-  '/favorite': Favorite,
+  '/': HomePage,
+  '/home': HomePage,
+  '/brands': LIST,
   '/detail/:id': Detail,
   '*': 'NotFound',
 };

@@ -50,14 +50,16 @@ body {
   margin-right: auto;
   justify-content: space-between;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto 1fr;
   text-align: center;
   vertical-align: middle;
 }
 
 .headerLogo {
-  margin: 2rem 2rem 0 2rem;
+  margin: 2rem 2rem 0 0;
+  justify-self: start;
 }
+
 .headerMenu {
   font-size: 32px;
   margin-left: auto;
@@ -117,83 +119,6 @@ body {
 /*
  * Jumbotron
  */
-
- .content-item {
-  position: relative;
-}
-
-.content-item img {
-  transition: opacity 0.3s ease-in-out;
-  width: 100%;
-}
-
-.content-item:hover img {
-  opacity: 0.4;
-}
-
-.content-item#erigoHero:hover::before {
-  content: "";
-  text-align: right;
-  box-sizing: border-box;
-  vertical-align: middle;
-  position: absolute;
-  top: 6rem;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url("../public/images/erigoLogo.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  transition: opacity 0.3s ease-in-out;
-  opacity: 1;
-  width: 50%;
-  height: 50%;
-}
-
-.content-item#compassHero:hover::before {
-  content: "";
-  text-align: right;
-  box-sizing: border-box;
-  vertical-align: middle;
-  position: absolute;
-  top: 10rem;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url("../public/images/compassLogo.svg");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  transition: opacity 0.3s ease-in-out;
-  opacity: 1;
-  width: 50%;
-  height: 50%;
-}
-
-.content-item#mdHero:hover::before {
-  content: "";
-  text-align: right;
-  box-sizing: border-box;
-  vertical-align: middle;
-  position: absolute;
-  top: 10rem;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url("../public/images/mdLogo.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  transition: opacity 0.3s ease-in-out;
-  opacity: 1;
-  width: 50%;
-  height: 50%;
-}
-
-.content-item:hover::before {
-  opacity: 1;
-}
 
 
 /*

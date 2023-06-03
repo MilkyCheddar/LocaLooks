@@ -1,6 +1,15 @@
-const data = require('./data.json');
+const data = require('../src/data.json');
 const express = require('express');
 const app = express();
+const devConfig = require('../webpack.dev.js');
+const PORT = devConfig.devServer.port;
+
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
+});
+
+// Serve the images directory statically
+app.use('/images', express.static(path.join(__dirname, 'images')));
 
 // GET all brands
 app.get('/api/brands', (req, res) => {
