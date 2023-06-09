@@ -6,8 +6,8 @@ class AboutUs extends HTMLElement {
   }
 
   render() {
-    this.innerHTML =  `
-    /* masukin html disini */
+    this.innerHTML = `
+    <h2>TEST SATU DUA TIGA TEST</h2>
     `;
   }
 }
