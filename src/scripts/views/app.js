@@ -22,7 +22,6 @@ class App {
       hero: this._hero,
     });
 
-    // kita bisa menginisiasikan komponen lain bila ada
   }
 
   async renderPage() {

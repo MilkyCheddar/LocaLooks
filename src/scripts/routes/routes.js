@@ -1,12 +1,15 @@
-import Favorite from '../views/pages/favorite';
-import Detail from '../views/pages/detail';
 import Home from '../views/pages/home';
+import AboutUs from '../views/pages/about-us';
+import BrandProducts from '../views/pages/brands-detail';
+import BrandList from '../views/pages/brands-catalogue';
+
 
 const routes = {
   '/': Home,
   '/home': Home,
-  '/favorite': Favorite,
-  '/detail/:id': Detail,
+  '/about-us': AboutUs,
+  '/brands-catalogue': BrandList,
+  '/brands-detail': BrandProducts, //later we added the id 
   '*': 'NotFound',
 };
 

@@ -1,0 +1,20 @@
+{
+    "brands": [
+      {
+        "id": "erigo",
+        "name": "Erigo",
+        "pictureId": "images/ErigoBanner.jpg"
+      },
+      {
+        "id": "compass",
+        "name": "Compass",
+        "pictureId": "images/compassBanner.jpg"
+      },
+      {
+        "id": "maternal-disaster",
+        "name": "Maternal",
+        "pictureId": "images/mdBanner.jpg"
+      }
+    ]
+  }
+  
