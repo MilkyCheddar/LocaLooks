@@ -8,6 +8,7 @@ import './components/brands-detail';
 import '../styles/main.css';
 import '../styles/responsive.css';
 import '../styles/about-us.css';
+import '../styles/detail.css'
 import App from './views/app';
 import swRegister from './utils/sw-register';
 //import CONFIG from './globals/config';
