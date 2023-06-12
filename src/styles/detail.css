@@ -1,0 +1,45 @@
+.container {
+    max-width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  
+  .post-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .picture {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+  
+  .post-item__products,
+  .post-item__name,
+  .post-item__type,
+  .post-item__description {
+    margin: 10px 0;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .container {
+      max-width: 768px;
+    }
+  
+    .post-item {
+      flex-direction: row;
+      text-align: left;
+      align-items: flex-start;
+    }
+  
+    .picture {
+      max-width: 300px;
+    }
+  
+    .post-item__content {
+      margin-left: 20px;
+    }
+  }
