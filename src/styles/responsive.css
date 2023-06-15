@@ -48,6 +48,17 @@
       display: none;
     }
   }
+  @media screen and (max-width: 768px) {
+    .brandPick {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .content-item,
+    .content-detail {
+      width: 100%;
+    }
+  }
   @media screen and (min-width: 800px) {
     .nav__list {
       max-width: 800px;
