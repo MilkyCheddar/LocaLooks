@@ -1,36 +1,38 @@
 {
   "teams": [
     {
-      "name": "ini about us",
-      "photo": "",
-      "role": "",
-      "instagram": "",
-      "linkedin": "",
-      "github": ""
+      "name": "Dani Ramadhan",
+      "id": "F008XB049",
+      "photo": "https://previews.dropbox.com/p/thumb/AB71u-T9WKpPKG2zrJzus0hLAtqtkezfw52C2HYOH9bEJxyGLGDZLPi_jWX4RKfSnEsRBqR8BIc_TkrWaL4m-IchxmSLZp3Kwh6A83G2D3JZmMCPdlFb9c7KzqSNOhO0Qwv6PRE06j7iERvFLUcfSLpTNyqBpoCpDhspCVsK9PiK3ojxXwwv0N26nHxzi7yiuol7qwUwjKcWvSzxPLS1elYDGEFakrj2cuTQ7f_Vay6tsBWhpLKqJLB7vOVWVNK7kynN3SKsvcKQ7s_OBbal5xBT8nf7EsUWMEAydlo1wY05SM1whYmFPJbepp5qVjLjWHWjn5RxxfHqNv8d2iQL73sIc1jofKWZGWl6OET7cjGu1gHiuGPVvU4LkF6ofaejgqM/p.png",
+
+      "instagram": "https://www.instagram.com/daniramadhan27/",
+      "linkedin": "https://www.linkedin.com/in/dani-ramadhan/",
+      "github": "https://github.com/daniram27"
     },
     {
-      "name": "",
-      "photo": "",
-      "role": "",
-      "instagram": "",
-      "linkedin": "",
-      "github": ""
+      "name": "Fransiskus Geofanny Widianto",
+      "id": "F015XB156",
+      "photo": "https://previews.dropbox.com/p/thumb/AB4_T8naxy8Pl2YConKedsqHuPhudGDoz6L0ONAyQslqTUQv8E0f76zE8nulzCBmqfOJNhrTw6NZ-OU2OAMpyghE3VlE8f9FLPcYRXNEvgqPCi5KzLdy7S-FQ4QF6emmp5d7FmrAP2yImU0az2ZKELS6TS-jII9ukeBqLtWEzizSg1BFRtUmM4tHGgfwR5r9O2-D4JdGBKnCF8Skkh7-lg0SQ8C1DbfBWj4a5bw6JlFj6D-wqN_mVGab8oQHvSfTfJZHwlKA95RCYTDIs82YJscRxjeTJ-Slg7kjVAXRKPXSeSsFFLEv8cAe8dAoWwQWMW64_fXr1WxJJO-7WgleUYiI2GjOVa7o_Luroec5uWUbomnvH8Q6eK4jp_GL63olN0c/p.jpeg",
+      "instagram": "https://www.instagram.com/frans.01",
+      "linkedin": "https://www.linkedin.com/in/fransiskus-geofanny-widianto/",
+      "github": "https://github.com/MilkyCheddar/"
     },
     {
-      "name": "",
-      "photo": "",
-      "role": "",
-      "instagram": "",
-      "linkedin": "",
-      "github": ""
+      "name": "Bima Prasetio ",
+      "id": "F128XB288",
+      "photo": "https://previews.dropbox.com/p/thumb/AB71u-T9WKpPKG2zrJzus0hLAtqtkezfw52C2HYOH9bEJxyGLGDZLPi_jWX4RKfSnEsRBqR8BIc_TkrWaL4m-IchxmSLZp3Kwh6A83G2D3JZmMCPdlFb9c7KzqSNOhO0Qwv6PRE06j7iERvFLUcfSLpTNyqBpoCpDhspCVsK9PiK3ojxXwwv0N26nHxzi7yiuol7qwUwjKcWvSzxPLS1elYDGEFakrj2cuTQ7f_Vay6tsBWhpLKqJLB7vOVWVNK7kynN3SKsvcKQ7s_OBbal5xBT8nf7EsUWMEAydlo1wY05SM1whYmFPJbepp5qVjLjWHWjn5RxxfHqNv8d2iQL73sIc1jofKWZGWl6OET7cjGu1gHiuGPVvU4LkF6ofaejgqM/p.png",
+
+      "instagram": "https://instagram.com/bimamib_16",
+      "linkedin": "https://www.linkedin.com/in/bimamib16",
+      "github": "https://github.com/bimamib"
     },
     {
-      "name": "",
-      "photo": "",
-      "role": "",
-      "instagram": "",
-      "linkedin": "",
-      "github": ""
+      "name": "Adhitya Albatama Putra",
+      "id": "F078XB319",
+      "photo": "https://previews.dropbox.com/p/thumb/AB71u-T9WKpPKG2zrJzus0hLAtqtkezfw52C2HYOH9bEJxyGLGDZLPi_jWX4RKfSnEsRBqR8BIc_TkrWaL4m-IchxmSLZp3Kwh6A83G2D3JZmMCPdlFb9c7KzqSNOhO0Qwv6PRE06j7iERvFLUcfSLpTNyqBpoCpDhspCVsK9PiK3ojxXwwv0N26nHxzi7yiuol7qwUwjKcWvSzxPLS1elYDGEFakrj2cuTQ7f_Vay6tsBWhpLKqJLB7vOVWVNK7kynN3SKsvcKQ7s_OBbal5xBT8nf7EsUWMEAydlo1wY05SM1whYmFPJbepp5qVjLjWHWjn5RxxfHqNv8d2iQL73sIc1jofKWZGWl6OET7cjGu1gHiuGPVvU4LkF6ofaejgqM/p.png",
+      "instagram": "https://instagram.com/adhityaalba_",
+      "linkedin": "https://www.linkedin.com/in/adhitya-albatama-481023184/",
+      "github": "https://github.com/adhityaalba"
     }
   ]
 }
