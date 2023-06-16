@@ -1,4 +1,5 @@
 import DATA from '../../public/TEAM.json';
+import '../../styles/about-us.css';
 
 class AboutUs extends HTMLElement {
   connectedCallback() {
@@ -23,11 +24,11 @@ class AboutUs extends HTMLElement {
         <div class="team-card-content">
           <h4>${item.name}</h4>
           <h3>${item.id}</h3>
-          <ul>
-            <li>IG</li>
-            <li>Linkedin</li>
-            <li>Github</li>
-          </ul>
+        <div class="socialMedia">
+          <a href="${item.instagram}"  target="blank" class="fa fa-instagram"></a>
+          <a href="${item.linkedin}" target="blank" class="fa fa-linkedin"></a>
+          <a href="${item.github}" target="blank" class="fa fa-github"></a>
+        </div>
         </div><!-- team-card-content -->
       </div><!--team-card-->
       `;
