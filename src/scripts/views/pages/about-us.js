@@ -1,6 +1,6 @@
 const AboutUs = {
   async render() {
-    return /* html */`
+    return /* html */ `
       <about-us></about-us>
     `;
   },
@@ -8,7 +8,6 @@ const AboutUs = {
   async afterRender() {
     const navbar = document.querySelector('navigation-bar');
     navbar.classList.remove('hidden');
-
   },
 };
 
