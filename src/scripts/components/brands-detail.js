@@ -6,7 +6,7 @@ class BrandsDetail extends HTMLElement {
     render() {
       this.innerHTML =  `
       <section>
-        <h2 class="brand_name">${brand.name}</h2>
+        <h2 class="brand_name">${brands.name}</h2>
         <img class="brand_image"> src="${API_ENDPOINT.BRAND_IMAGE + brand.thumbnail}" alt="${brand.name}" />
         <div class="brand_info">
             <h3>Information</h3>
