@@ -9,7 +9,7 @@ const routes = {
   '/home': Home,
   '/about-us': AboutUs,
   '/brands-catalogue': BrandList,
-  '/brands-detail': BrandProducts, //later we added the id 
+  '/brands-catalogue/:id': BrandProducts, //later we added the id 
   '*': 'NotFound',
 };
 

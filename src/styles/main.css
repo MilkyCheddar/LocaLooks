@@ -56,7 +56,8 @@ body {
   max-width: 220px;
 }
 
-@media screen (max-width: 599px) {
+
+@media screen and (max-width: 599px) {
   .headerLogo {
     width: 100%;
     max-width: 220px;
@@ -331,6 +332,11 @@ main {
 .menu,
 .reviews {
   font-size: medium;
+}
+
+.custom-image-size {
+  width: 500px;
+  height: 500px;
 }
 
 /*

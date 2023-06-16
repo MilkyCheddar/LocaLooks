@@ -8,8 +8,12 @@ import './components/brands-detail';
 import '../styles/main.css';
 import '../styles/responsive.css';
 import '../styles/about-us.css';
+import '../styles/detail.css';
+import '../styles/brands-list.css';
 import App from './views/app';
 import swRegister from './utils/sw-register';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 //import CONFIG from './globals/config';
 
 const skipToContent = document.querySelector('.skip-to-content');

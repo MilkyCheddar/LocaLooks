@@ -16,7 +16,6 @@ class NavigationBar extends HTMLElement {
           <ul class="navbar">
             <li class="navItem"><a href="/">Home</a></li>
             <li class="navItem"><a href="#/brands-catalogue">Brands</a></li>
-            <li class="navItem"><a href="#/brands-detail">Detail</a></li>
             <li class="navItem"><a href="#/about-us">About Us</a></li>
           </ul>
         </nav>
@@ -25,7 +24,6 @@ class NavigationBar extends HTMLElement {
         <ul>
           <li class="drawerItem"><a href="/">Home</a></li>
           <li class="drawerItem"><a href="#/brands-catalogue">Brands</a></li>
-          <li class="drawerItem"><a href="#/brands-detail">Detail</a></li>
           <li class="drawerItem"><a href="#/about-us">About Us</a></li>
         </ul>
       </div>
