@@ -1,46 +1,62 @@
-.container {
-    max-width: 100%;
-    padding: 0 20px;
-    margin: 0 auto;
-  }
-  
-  .post-item {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .picture {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-  }
-  
-  .post-item__products,
-  .post-item__name,
-  .post-item__type,
-  .post-item__description {
-    margin: 10px 0;
-  }
-  
-  @media screen and (min-width: 768px) {
-    .container {
-      max-width: 768px;
-    }
-  
-    .post-item {
-      flex-direction: row;
-      text-align: left;
-      align-items: flex-start;
-    }
-  
-    .picture {
-      max-width: 300px;
-    }
-  
-    .post-item__content {
-      margin-left: 20px;
-    }
-  }
+h2.brands_name {
+  font-size: 36px;
+  color: #27374D;
+  justify-content: center;
+  display: flex;
+  margin: 20px 20px;
+}
+
+img.brands_image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.brands_info h3 {
+  font-size: 36px;
+  padding: 15px 0;
+  color: #27374D;
+}
+
+.brands_info, .category h4 {
+  font-size: 15px;
+  padding-left: 0;
+}
+
+.brands_info, .category p {
+  font-size: 10px;
+}
+
+.brands_info #catalogs {
+  display: grid;
+}
+
+.brands_info #catalogs .brands {
+  display: flex;
+  flex-direction: column;
+}
+
+.brands_info #catalogs h4 {
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+} 
+
+.brands_info #catalogs p {
+  padding: 32px 32px;
+}
+
+.brands_info .brands_description {
+  display: flex;
+  margin: 20px 20px;
+}
+
+.brands_info .brands_description h4 {
+  font-size: 20px;
+  margin: 20px;
+}
+
+.brands_info .brands_description p {
+  display: flex;
+  font-size: 12px;
+  text-align: justify;
+}
