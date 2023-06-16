@@ -1,6 +1,7 @@
 class BrandsDetail extends HTMLElement {
-    connectedCallback() {
-      this.render();
+  set products(product) {
+    this._product = product;
+    this.render();
     }
   
     render() {
