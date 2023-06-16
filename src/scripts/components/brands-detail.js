@@ -6,16 +6,24 @@ class BrandsDetail extends HTMLElement {
     render() {
       this.innerHTML =  `
       <section>
-        <div class="container">
-          <div class="lg:w-4/5 mx auto flex flex-wrap">
-            <img alt="products" class="lg:w-1/2 w-full shadow-md h-auto object-cover object-center rounded" src="${this._product.url}"></img>
-              <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-                <h1 class="text-gray-900 text-2x1 md:text-3x1 title-font font-semibold mb-1">${this._product.brandName}</h1>
-                <p class="leading-relaxed">${this._product.description}</p>
-                <div class="flex mt-6 items-center border-2 border-gray-100 mb-5">
+        <h2 class="brand_name">${brand.name}</h2>
+        <img class="brand_image"> src="${API_ENDPOINT.BRAND_IMAGE + brand.thumbnail}" alt="${brand.name}" />
+        <div class="brand_info">
+            <h3>Information</h3>
+            <div class = categories>
+                <h4>Kategori</h4>
+                <p>${brand.categories}</p>
+            </div>
+            <div id="catalogs">
+                <div class="brand">
+                    <h4>Katalog</h4>
+                    <p>${brand.brands.catalogs.map((brand) => `- ${brand.name}`).join('<br>')}</p>
+                    <h5>Type</h5>
+                    <p>${brand.brands.type.catalogs.map((brand) => `- ${brand.type.name}`).join('<br>')}</p>
                 </div>
-              </div>
-          </div>
+            </div>
+            <h4>Description</h4>
+            <p>${brand.description}</p>
         </div>
       </section>
       `;
