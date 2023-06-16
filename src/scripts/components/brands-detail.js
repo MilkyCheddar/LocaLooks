@@ -21,8 +21,10 @@ class BrandsDetail extends HTMLElement {
                     <p>${this._product.web_url}</p>
                 </div>
             </div>
-            <h4>Description</h4>
-            <p>${this._product.description}</p>
+            <div class="brands_description">
+              <h4>Description</h4>
+              <p>${this._product.description}</p>
+            </div>
         </div>
       </section>
       `;
