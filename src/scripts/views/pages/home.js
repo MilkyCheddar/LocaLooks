@@ -12,7 +12,7 @@ const Home = {
 
     const navbar = document.querySelector('navigation-bar');
     navbar.classList.remove('hidden');
-    const brandPicks = document.querySelector('#content');
+    const brandPicks = document.querySelector('brandPick');
     
     for (let i = 0; i < picks.length; i++) {
       const brandPickElement = picks[i];
