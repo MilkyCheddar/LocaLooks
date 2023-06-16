@@ -11,7 +11,7 @@ class BrandsDetail extends HTMLElement {
         <img class="brands_image"> src="${this._product.image_url}" alt="brands_name" />
         <div class="brands_info">
             <h3>Information</h3>
-            <div class = category>
+            <div class="category">
                 <h4>Kategori</h4>
                 <p>${this._product.category}</p>
             </div>
