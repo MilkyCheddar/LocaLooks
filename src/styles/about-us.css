@@ -4,6 +4,31 @@
   padding: 20px;
 }
 
+h2 {
+  color: #333;
+  font-size: 24px;
+}
+
+h3 {
+  color: #666;
+  font-size: 18px;
+}
+
+p {
+  color: #555;
+  line-height: 1.5;
+}
+
+ul {
+  color: #555;
+  margin-left: 20px;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
 .socialMedia {
   margin-top: 20px;
   display: flex;
