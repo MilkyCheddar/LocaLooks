@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -12,7 +13,7 @@ body, html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 12px;
   color: #424242;
 }
@@ -22,103 +23,220 @@ body {
  *
  */
 
- .skip-to-content {
+.skip-to-content {
   position: absolute;
-  background-color: transparent;
-  text-decoration: none;
-  color: transparent;
-  border: none;
-  top: -5rem;
-  cursor: pointer;
+  top: -40px;
+  left: 0;
+  padding: 8px;
+  background-color: #2c9330;
+  color: white;
+  z-index: 100;
 }
 
 .skip-to-content:focus {
-  outline: none;
-  display: block;
-  top: 1rem;
-  color: red;
-}
-
-.header {
-  min-height: 56px;
-  transition: min-height 0.3s;
+  top: 0;
 }
 
 .headerInner {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: space-between;
+  padding: 8px 16px;
+  background-color: white;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  text-align: center;
-  vertical-align: middle;
+  grid-template-columns: auto 1fr auto;
+  gap: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
 }
 
 .headerLogo {
-  margin: 2rem 2rem 0 2rem;
+  margin: 10px 10px 10px 10px;
+  min-width: 100%;
+  max-width: 220px;
 }
+
+
 .headerMenu {
-  font-size: 32px;
-  margin-left: auto;
-  padding-right:3rem;
-  text-align: right;
-  margin-top:1rem;
-  padding-top: 1rem;
-  width: 30px;
-  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  padding: 8px;
+  cursor: pointer;
+  min-width: 45px;
+  min-height: 45px;
 }
-.headerMenu:focus, .headerMenu:hover{
+
+.headerMenu:focus,
+.headerMenu:hover {
   color: green;
 }
+
 .headerTitle {
   display: inline-block;
   font-weight: 300;
   font-size: 4em;
-  margin:auto;
+  margin: auto;
   color: #212121;
   text-align: left;
 }
 
 .navbar {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center; /* Horizontal alignment */
-  align-items: center; /* Vertical alignment */
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
   font-size: large;
   width: 100%;
   text-align: center;
-}
-
-.navItem {
-  box-sizing: border-box;
-  display: inline-block;
-  width: 30%;
-  text-align: center;
-  line-height: 3rem;
-  vertical-align: middle;
-  text-transform: uppercase;
 }
 
 .navbar a {
   display: inline-block;
   padding: 1.3em;
   text-decoration: none;
-  color: #616161;
+  color: #000000;
+  font-weight: 800;
 }
 
 .navbar a:hover {
   text-decoration: underline;
-  color: #000;
+  color: #f51414;
 }
 
+.navItem {
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  line-height: 3rem;
+  vertical-align: middle;
+  text-transform: uppercase;
+  min-width: 45px;
+  min-height: 45px;
+}
+
+.drawerItem {
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  line-height: 3rem;
+  vertical-align: middle;
+  text-transform: uppercase;
+  min-width: 45px;
+  min-height: 45px;
+  font-size: 10px;
+}
+
+#menu {
+  font-size: 32px;
+  text-decoration: none;
+  color: black;
+  min-width: 44px;
+  min-height: 44px;
+  width: 100%;
+  text-align: center;
+}
+
+#drawer {
+  width: 250px;
+  position: absolute;
+  padding: 10px;
+  display: none;
+  z-index: 999;
+
+  /* menyembunyikan #drawer -250px (sesuai dengan ukuran lebar drawer) ke kiri */
+  transform: translate(0px, 0);
+  transition: transform 0.3s ease-in-out;
+  background-color: #111;
+}
+
+#drawer ul {
+  list-style-type: none;
+  padding: 0 16px;
+}
+
+#drawer li {
+  padding: 5px 0px;
+  min-width: 45px;
+  min-height: 45px;
+}
+
+#drawer a {
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  min-width: 45px;
+  min-height: 45px;
+}
+
+#drawer a:hover {
+  text-decoration: underline;
+  font-size: 25px;
+  color: #79e0ee;
+  min-width: 45px;
+  min-height: 45px;
+}
+
+#drawer.open {
+  transform: translate(0, 0);
+  display: block;
+}
+
+@media screen and (max-width: 911px) {
+  #nav {
+    display: none;
+  }
+
+  .headerLogo {
+    width: 100%;
+    max-width: 220px;
+    min-width: 100%;
+    padding: 5px 5px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  #nav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 912px) {
+  #drawer {
+    position: relative;
+    transform: translate(0, 0);
+  }
+
+  #menu {
+    display: none;
+  }
+}
+
+/*
+ * Jumbotron
+ */
+
+
+/*
+ * main
+ */
+
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#explore {
+  text-align: center;
+  padding: 2rem;
+}
 
 /*
  * Card
  */
 
-.r__catalog{
-  margin:auto;
+.r__catalog {
+  margin: auto;
   border: 3px;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -129,39 +247,46 @@ body {
   margin-bottom: 20px;
   padding: 20px;
 }
-.r__catalog:hover{
+
+.r__catalog:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-.r__img{
+
+.r__img {
   width: 100%;
   height: 200px;
   overflow: hidden;
   margin-bottom: 10px;
   position: relative;
 }
-.r__img img{
+
+.r__img img {
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
-.r__name{
+
+.r__name {
   font-size: 18px;
   font-style: oblique;
 }
-.r__desc, .r__city, .r__rating {
+
+.r__desc,
+.r__city,
+.r__rating {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 10px;
 }
 
-.r__button{
+.r__button {
   display: flex;
   justify-content: center;
 }
 
-.r__button button{
+.r__button button {
   display: block;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   border: none;
   border-radius: 5px;
@@ -178,21 +303,25 @@ body {
 /*
  * Detail-item
  */
-.r__detail h1{
+.r__detail h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
 }
-.r__detailImg img{
-  width: 100%; 
- }
-.r__detailInfo{
-  margin-top:2rem;
+
+.r__detailImg img {
+  width: 100%;
+}
+
+.r__detailInfo {
+  margin-top: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 3rem;
   text-align: justify;
 }
-.menu, .reviews{
+
+.menu,
+.reviews {
   font-size: medium;
 }
 
@@ -217,13 +346,13 @@ body {
   justify-content: center;
 }
 
-.like:hover{
+.like:hover {
   transition: ease 0.3s;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   opacity: 0.8;
 }
 
-.favorite{
+.favorite {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 2rem;
@@ -233,16 +362,18 @@ body {
  * footer
  */
 
- footer {
+footer {
   padding: 2em;
   width: 100%;
   text-align: center;
+  background-color: #98eecc;
 }
 
-footer h1{
+footer h1 {
   font-size: 18px;
 }
-footer h1:hover{
+
+footer h1:hover {
   transition: ease 0.3s;
   opacity: 0.8;
 }
