@@ -8,28 +8,29 @@ class BrandsSection extends HTMLElement {
   render() {
     const item = this._product;
     const cardList = (data) => /* html */`
-    <div class="catalogue" tabindex="0">
-      <div class="catalogue-image">
-        <img
-          src="${data.image_url}"
+    <div class="carding grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6" tabindex="0">
+      <div class="catalogue-image">        
+      <a href="#/brands-catalogue/${data.uuid}">
+        <img src="${data.image_url}"
           loading="lazy"
           alt="${data.productName}"
-        />
+        /></a>
       </div>
       <div class="catalogue-content">
-        <a class="card-link-button" href="#/brands-catalogue/${data.uuid}">${data.productName}</a>
+        <a class="card-link-button no-underline" href="#/brands-catalogue/${data.uuid}">${data.productName}</a>
       </div>
-      <div class="catalogue-head">
+      <div class="catalogue-head"> <a class="no-underline" href="#/brands-catalogue/${data.uuid}">
         <p class="catalogue-category">Category: ${data.category}</p>
-      </div>
+          </a>
+        </div>
     </div>
   </div>
       `;
 
     this.innerHTML = /* html */ `
-          <div>
-            <h2 class="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4">Our Picks!</h2>
-            <div class="py-5 flex flex-col items-center md:flex-row md:justify-between">
+          <div class="categories">
+            <h2 class="text-gray-800 text-2xl lg:text-3xl font-bold text-center pt-1 mb-1">Our Picks!</h2>
+            <div class="py-3 flex flex-col items-center md:flex-row md:justify-between">
               <!-- sorting -->
               <label for="SortBy" class="sr-only"> Sort </label>
 
@@ -47,12 +48,9 @@ class BrandsSection extends HTMLElement {
               </select>
             </div>
           </div>
-
-          <div class="carding grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6">
-            ${item.map((data) => cardList(data)).reverse().join('')}
-          </div>
         </div>
-      </div >
+      </div>
+      ${item.map((data) => cardList(data)).reverse().join('')}
       `;
     const sorting = this.querySelector('#SortBy');
     sorting.addEventListener('change', () => {

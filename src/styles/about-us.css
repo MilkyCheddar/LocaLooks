@@ -75,7 +75,7 @@ li {
   width: 100%;
   min-height: 500px;
   background: #fff;
-  background-image: url('/src/public/images/compassBanner.jpg');
+  background-image: url('https://milkycheddar.github.io/LocaLooks-images/images/brands/compassBanner.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

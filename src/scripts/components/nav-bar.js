@@ -10,7 +10,7 @@ class NavigationBar extends HTMLElement {
         Skip To Content
       </button>
       <div class="headerInner">
-        <img src="images/icon-small.png" class="headerLogo" alt="logo">
+        <a href="#/home"><img src="images/icon-small.png" class="headerLogo" alt="logo"></a>
         <button id="menu" class="headerMenu" href="#drawer.open">☰</button>  
         <nav class="nav" id="nav">
           <ul class="navbar">

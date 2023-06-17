@@ -3,23 +3,35 @@ class BrandsDetail extends HTMLElement {
     this._product = product;
     this.render();
   }
-  
-    render() {
-      this.innerHTML =  `
+
+  render() {
+    this.innerHTML =`
       <section>
-        <div class="container">
-          <div class="lg:w-4/5 mx auto flex flex-wrap">
-            <img alt="products" class="lg:w-1/2 w-full shadow-md h-auto object-cover object-center rounded" src="${this._product.image_url}"></img>
-              <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-                <h1 class="text-gray-900 text-2x1 md:text-3x1 title-font font-semibold mb-1">${this._product.productName}</h1>
-                <p class="leading-relaxed">${this._product.description}</p>
-                <div class="flex mt-6 items-center border-2 border-gray-100 mb-5">
-                </div>
-              </div>
+        <h2 class="brands_name">${this._product.productName}</h2>
+        <div class="brands-detail">
+        <img src="${this._product.image_url}"
+          class="brands_image"
+          alt="${this._product.productName}"
+        />
+        <div class="brands_info">
+          <h3>Information</h3>
+          <div class="category">
+            <h4 class"inline">Category:</h4>
+            <p class="inline">${this._product.category}</p>
+          </div>
+          <div id="catalogs">
+          <div class="brands">
+          <button class="shop-now-button"><a class="no-underline" href="${this._product.web_url}" target="_blank">Shop Now</a></button>
+      </div>
+          </div>
+          <div class="brands_description">
+            <h4>Description</h4>
+            <p>${this._product.description}</p>
           </div>
         </div>
+      </div>  
       </section>
-      `;
+    `;
     }
   }
   

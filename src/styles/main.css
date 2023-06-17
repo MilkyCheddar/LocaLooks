@@ -52,18 +52,9 @@ body {
 
 .headerLogo {
   margin: 10px 10px 10px 10px;
+  padding: 0, 1000px;
   min-width: 100%;
   max-width: 220px;
-}
-
-
-@media screen and (max-width: 599px) {
-  .headerLogo {
-    width: 100%;
-    max-width: 220px;
-    min-width: 100%;
-    padding: 10px 10px;
-  }
 }
 
 .headerMenu {
@@ -146,6 +137,10 @@ body {
   text-align: center;
 }
 
+#menu:focus{
+  border: 1px solid #333;
+}
+
 #drawer {
   width: 250px;
   position: absolute;
@@ -191,10 +186,6 @@ body {
   display: block;
 }
 
-@media screen and (max-width: 911px) {
-  #nav {
-    display: none;
-  }
 
   .headerLogo {
     width: 100%;
@@ -202,176 +193,19 @@ body {
     min-width: 100%;
     padding: 5px 5px;
   }
-}
-
-@media screen and (max-width: 280px) {
-  #nav {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 912px) {
-  #drawer {
-    position: relative;
-    transform: translate(0, 0);
-  }
-
-  #menu {
-    display: none;
-  }
-}
-
-/*
- * Jumbotron
- */
 
 
 /*
  * main
  */
 
+ .no-underline {
+  text-decoration: none;
+}
+
 main {
-  width: 100%;
-  margin: 0 auto;
-}
-
-#explore {
-  text-align: center;
-  padding: 2rem;
-}
-
-/*
- * Card
- */
-
-.r__catalog {
   margin: auto;
-  border: 3px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  width: 100%;
-  overflow: hidden;
-  margin-top: 0;
-  margin-bottom: 20px;
-  padding: 20px;
 }
-
-.r__catalog:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-.r__img {
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-  margin-bottom: 10px;
-  position: relative;
-}
-
-.r__img img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-
-.r__name {
-  font-size: 18px;
-  font-style: oblique;
-}
-
-.r__desc,
-.r__city,
-.r__rating {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 10px;
-}
-
-.r__button {
-  display: flex;
-  justify-content: center;
-}
-
-.r__button button {
-  display: block;
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 15px 20px;
-  margin-top: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.r__button button:hover {
-  background-color: #3e8e41;
-}
-
-/*
- * Detail-item
- */
-.r__detail h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.r__detailImg img {
-  width: 100%;
-}
-
-.r__detailInfo {
-  margin-top: 2rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 3rem;
-  text-align: justify;
-}
-
-.menu,
-.reviews {
-  font-size: medium;
-}
-
-.custom-image-size {
-  width: 500px;
-  height: 500px;
-}
-
-/*
-   Like
-*/
-
-.like {
-  font-size: 18px;
-  position: fixed;
-  bottom: 16px;
-  right: 16px;
-  background-color: #db0000;
-  color: white;
-  border: 0;
-  border-radius: 50%;
-  width: 55px;
-  height: 55px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.like:hover {
-  transition: ease 0.3s;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  opacity: 0.8;
-}
-
-.favorite {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 2rem;
-}
-
 /*
  * footer
  */
@@ -380,11 +214,12 @@ footer {
   padding: 2em;
   width: 100%;
   text-align: center;
-  background-color: #98eecc;
+  background-color: black;
 }
 
 footer h1 {
   font-size: 18px;
+  color: wheat;
 }
 
 footer h1:hover {

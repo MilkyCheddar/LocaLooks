@@ -1,85 +1,77 @@
- @media screen and (max-width: 499px) {
-    .catalogs, .r__detailInfo {
-      grid-template-columns: 1fr;
-    }
+@media screen and (max-width: 599px) {
+  .headerLogo {
+    width: 100%;
+    max-width: 220px;
+    min-width: 100%;
+    padding: 10px 10px;
+  }
+}
 
-    .r__detail, .favorite{
-      grid-template-columns: 1fr;
-    }
+brands-section{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.categories{
+  grid-column: 1 / span 3;
+  padding-top: 0.5rem;
+}
+
+@media screen and (max-width: 750px) {
+  brands-section{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .categories{
+    grid-column: 1 / span 2;
+  }
+}
+@media screen and (max-width: 570px) {
+  brands-section{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .categories{
+    grid-column: 1 / span 1;
+  }
+  
+}
+  
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
   }
 
-  @media screen and (max-width: 551px){
-    .nav {
-      z-index: 10;
-      background-color: #fff;
-      width: 100%;
-      position: absolute;
-  
-      /* This trasform moves the drawer off canvas. */
-      -webkit-transform: translate(0, -100%);
-      transform: translate(0, -100%);
-  
-      /* Optionally, we animate the drawer. */
-      transition: transform 0.3s ease;
-    }
-  
-    #drawer.open {
-      -webkit-transform: translate(0, 0);
-      transform: translate(0, 0);
-    }
-  
-    .nav__item {
-      display: block;
-      border-bottom: 1px solid #E0E0E0;
-      width: 100%;
-      text-align: center;
-    }
+  .post-item {
+    flex-direction: row;
+    text-align: left;
+    align-items: flex-start;
   }
-  @media screen and (min-width: 550px) {
-    .catalogs {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-column-gap: 10px;
-      grid-row-gap: 16px;
-    }
+
+  .picture {
+    max-width: 300px;
   }
-  @media screen and (min-width: 551px){
-    .header__menu {
+
+  .post-item__content {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 911px) {
+  #nav {
+    display: none;
+  }
+  @media screen and (max-width: 280px) {
+    #nav {
       display: none;
     }
   }
-  @media screen and (max-width: 768px) {
-    .brandPick {
-      flex-direction: column;
-      align-items: flex-start;
-    }
+}
 
-    .content-item,
-    .content-detail {
-      width: 100%;
+  @media screen and (min-width: 912px) {
+    #drawer {
+      position: relative;
+      transform: translate(0, 0);
     }
-  }
-  @media screen and (min-width: 800px) {
-    .nav__list {
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    .r__detailImg img{
-      width: 100%; 
-     }
-  }
   
-  @media screen and (min-width: 1050px) {
-    .catalogs {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      row-gap: 1rem;
-      column-gap: 1rem;
-    } 
-  }
-  
-  @media screen and (min-width: 1200px) {
-    main {
-      max-width: 1200px;
+    #menu {
+      display: none;
     }
   }
