@@ -1,46 +1,78 @@
-.container {
-    max-width: 100%;
-    padding: 0 20px;
-    margin: 0 auto;
+h2.brands_name {
+    font-size: 36px;
+    color: #27374D;
+    justify-content: center;
+    display: flex;
+    margin: 20px 20px;
+  }
+  .brand {
+    position: relative;
+    overflow: hidden;
+}
+  .brands_image {
+    transition: transform 0.3s;
+    width: 500px;
+    height: 500px;
   }
   
-  .post-item {
-    padding: 20px;
+  .brands_image:hover {
+    transform: scale(1.2);
+    cursor: zoom-in;
+}
+  
+  .brands_info h3 {
+    font-size: 36px;
+    padding: 15px 0;
+    color: #27374D;
+  }
+  
+  .brands_info, .category h4 {
+    font-size: 15px;
+    padding-left: 0;
+  }
+  
+  .brands_info, .category p {
+    font-size: 10px;
+  }
+  
+  .brands_info #catalogs {
+    display: grid;
+  }
+  
+  .brands_info #catalogs .brands {
     display: flex;
     flex-direction: column;
+  }
+  
+  .brands_info #catalogs h4 {
+    font-size: 30px;
     align-items: center;
-    text-align: center;
+    justify-content: center;
+  } 
+  
+  .brands_info #catalogs p {
+    padding: 32px 32px;
   }
   
-  .picture {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
+  .brands_info .brands_description {
+    display: flex;
+    margin: 20px 20px;
   }
   
-  .post-item__products,
-  .post-item__name,
-  .post-item__type,
-  .post-item__description {
-    margin: 10px 0;
+  .brands_info .brands_description h4 {
+    font-size: 20px;
+    margin: 20px;
   }
   
-  @media screen and (min-width: 768px) {
-    .container {
-      max-width: 768px;
-    }
-  
-    .post-item {
-      flex-direction: row;
-      text-align: left;
-      align-items: flex-start;
-    }
-  
-    .picture {
-      max-width: 300px;
-    }
-  
-    .post-item__content {
-      margin-left: 20px;
-    }
+  .brands_info .brands_description p {
+    display: flex;
+    font-size: 12px;
+    text-align: justify;
   }
+  .shop-now-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: black; /* Set your desired text color */
+    text-decoration: none;
+    border-radius: 4px;
+}

@@ -10,8 +10,7 @@ class BrandsSection extends HTMLElement {
     const cardList = (data) => /* html */`
     <div class="catalogue" tabindex="0">
       <div class="catalogue-image">
-        <img
-          src="${data.image_url}"
+        <img src="${data.image_url}"
           loading="lazy"
           alt="${data.productName}"
         />
