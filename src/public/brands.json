@@ -1,20 +1,35 @@
 {
-    "brands": [
-      {
-        "id": "erigo",
-        "name": "Erigo",
-        "pictureId": "images/ErigoBanner.jpg"
-      },
-      {
-        "id": "compass",
-        "name": "Compass",
-        "pictureId": "images/compassBanner.jpg"
-      },
-      {
-        "id": "maternal-disaster",
-        "name": "Maternal",
-        "pictureId": "images/mdBanner.jpg"
-      }
-    ]
-  }
-  
+  "brands": [
+    {
+      "id": "1",
+      "name": "Erigo",
+      "thumbnail": "https://milkycheddar.github.io/LocaLooks-images/images/brands/ErigoBanner.jpg",
+      "logo": "https://milkycheddar.github.io/LocaLooks-images/images/brands/erigoLogo.png",
+      "description": "Erigo is an Indonesian streetwear brand that was founded in 2011 by Muhammad Sadad. The brand has since become one of the most popular streetwear brands in Indonesia, and it has also expanded into other countries in Southeast Asia. Erigo is known for its unique and stylish designs, and it has a wide range of products, including t-shirts, hoodies, jackets, pants, and accessories. The brand has also collaborated with a number of popular celebrities and influencers, which has helped to increase its popularity. If you are looking for stylish and affordable streetwear, Erigo is a great option. The brand has a wide range of products to choose from, and its designs are sure to turn heads.",
+      "categories": [
+        {"name": "Apparel"},
+        {"name": "Accessories"}
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Compass",
+      "thumbnail": "https://milkycheddar.github.io/LocaLooks-images/images/brands/compassBanner.jpg",
+      "logo": "https://milkycheddar.github.io/LocaLooks-images/images/brands/compassLogo.svg",
+      "description": "Compass is a popular brand that has been around since 1998. Compass is known for its high-quality shoes, which are made with premium materials and construction. The brand offers a wide range of styles, including sneakers, boots, and sandals. Compass shoes are popular among both men and women, and they are often seen as a symbol of Indonesian culture.",
+      "categories": [
+        {"name": "footwear"}
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Hijack Sandals",
+      "thumbnail": "https://milkycheddar.github.io/LocaLooks-images/images/brands/HijackSandalsBanner.jpg",
+      "logo": "https://milkycheddar.github.io/LocaLooks-images/images/brands/hijackSandalsLogo.png",
+      "description": "Hijack Sandals is an Indonesian footwear brand founded in 2010 by Hadi Ismanto. The brand is known for its comfortable and stylish sandals that are made with high-quality materials. Hijack Sandals sandals are made with Vibram soles, which are known for their durability and traction.",
+      "categories": [
+        {"name": "footwear"}
+      ]
+    }
+  ]
+} 

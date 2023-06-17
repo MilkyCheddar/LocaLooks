@@ -1,0 +1,78 @@
+h2.brands_name {
+    font-size: 36px;
+    color: #27374D;
+    justify-content: center;
+    display: flex;
+    margin: 20px 20px;
+  }
+  .brand {
+    position: relative;
+    overflow: hidden;
+}
+  .brands_image {
+    transition: transform 0.3s;
+    width: 500px;
+    height: 500px;
+  }
+  
+  .brands_image:hover {
+    transform: scale(1.2);
+    cursor: zoom-in;
+}
+  
+  .brands_info h3 {
+    font-size: 36px;
+    padding: 15px 0;
+    color: #27374D;
+  }
+  
+  .brands_info, .category h4 {
+    font-size: 15px;
+    padding-left: 0;
+  }
+  
+  .brands_info, .category p {
+    font-size: 10px;
+  }
+  
+  .brands_info #catalogs {
+    display: grid;
+  }
+  
+  .brands_info #catalogs .brands {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .brands_info #catalogs h4 {
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+  } 
+  
+  .brands_info #catalogs p {
+    padding: 32px 32px;
+  }
+  
+  .brands_info .brands_description {
+    display: flex;
+    margin: 20px 20px;
+  }
+  
+  .brands_info .brands_description h4 {
+    font-size: 20px;
+    margin: 20px;
+  }
+  
+  .brands_info .brands_description p {
+    display: flex;
+    font-size: 12px;
+    text-align: justify;
+  }
+  .shop-now-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: black; /* Set your desired text color */
+    text-decoration: none;
+    border-radius: 4px;
+}

@@ -56,7 +56,8 @@ body {
   max-width: 220px;
 }
 
-@media screen (max-width: 599px) {
+
+@media screen and (max-width: 599px) {
   .headerLogo {
     width: 100%;
     max-width: 220px;
@@ -224,242 +225,6 @@ body {
  * Jumbotron
  */
 
-.jumbotron {
-  display: grid;
-  align-items: center;
-  justify-items: center;
-  width: 100%;
-  min-height: 500px;
-  background: #fff;
-  background-image: url('../public/images/compassBanner.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-}
-
-.jumbotron-overlay {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-
-.jumbotron-inner {
-  align-self: center;
-  text-align: center;
-  max-width: 60%;
-  position: absolute;
-  color: #ffffff;
-  z-index: 2;
-}
-
-.jumbotron-title {
-  color: #ffffff;
-  font-weight: 1000;
-  font-size: 40px;
-  text-shadow: 2px 2px 8px #000000;
-}
-
-.jumbotron-tag {
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 20px;
-  text-align: center;
-  text-shadow: 2px 2px 8px #000000;
-}
-
-.cards-container {
-  display: grid;
-  grid-row-gap: 8px;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.team-title {
-  background-color: #fff;
-}
-
-.team-title h3 {
-  text-align: center;
-  font-size: 40px;
-  font-weight: 800;
-  background-color: #fff;
-}
-
-.team-card {
-  padding: 30px 30px;
-  background-color: var(--thm-white);
-  box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.07);
-  position: relative;
-}
-.team-card-img {
-  position: relative;
-  text-align: center;
-  margin-bottom: 30px;
-}
-.team-card-img img {
-  height: 210px;
-  width: 210px;
-  padding: 10px 10px;
-  background-color: var(--thm-white);
-  border-radius: 50%;
-  position: relative;
-  transition: all 500ms ease;
-  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='%23E1E8EAFF' stroke-width='4' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
-  border-radius: 100px;
-}
-.team-card:hover .team-card-img img {
-  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='black' stroke-width='4' stroke-dasharray='6%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
-  border-radius: 100px;
-}
-.team-card-icon {
-  position: absolute;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  bottom: -15px;
-  opacity: 0;
-  transition: opacity 500ms ease;
-}
-.team-card:hover .team-card-icon {
-  opacity: 1;
-}
-.team-card-icon a {
-  height: 40px;
-  width: 40px;
-  line-height: 40px;
-  color: var(--thm-white);
-  border-radius: 50%;
-  text-align: center;
-  position: relative;
-}
-.team-card-icon a:hover {
-  background-color: var(--thm-black);
-}
-.team-card-icon a + a {
-  margin-left: 10px;
-}
-.team-card-icon .pinterest {
-  background-color: #f0312c;
-  top: -10px;
-}
-.team-card-icon .twitter {
-  background-color: #49befa;
-}
-.team-card-icon .facebook {
-  background-color: #3656f6;
-  top: -10px;
-}
-.team-card-content {
-  text-align: center;
-}
-.team-card-content h4 {
-  font-size: 20px;
-  margin-bottom: 0px;
-}
-.team-card-content h4 > a {
-  color: inherit;
-  transition: all 500ms ease;
-}
-.team-card:hover h4 > a {
-  color: var(--thm-primary);
-}
-.team-card-content p {
-  margin-bottom: 0;
-}
-.team-card:after {
-  position: absolute;
-  content: '';
-  bottom: 0px;
-  left: 0;
-  right: 0;
-  height: 4px;
-  width: 100%;
-  transform: scaleY(0);
-  transition: all 500ms ease;
-  background-color: var(--thm-primary);
-}
-.team-card:hover:after {
-  transform: scaleY(1);
-}
-
-.content-item {
-  position: relative;
-}
-
-.content-item img {
-  transition: opacity 0.3s ease-in-out;
-  width: 100%;
-}
-
-.content-item:hover img {
-  opacity: 0.4;
-}
-
-.content-item#erigoHero:hover::before {
-  content: '';
-  text-align: right;
-  box-sizing: border-box;
-  vertical-align: middle;
-  position: absolute;
-  top: 6rem;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url('../public/images/erigoLogo.png');
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  transition: opacity 0.3s ease-in-out;
-  opacity: 1;
-  width: 50%;
-  height: 50%;
-}
-
-.content-item#compassHero:hover::before {
-  content: '';
-  text-align: right;
-  box-sizing: border-box;
-  vertical-align: middle;
-  position: absolute;
-  top: 10rem;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url('../public/images/compassLogo.svg');
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  transition: opacity 0.3s ease-in-out;
-  opacity: 1;
-  width: 50%;
-  height: 50%;
-}
-
-.content-item#mdHero:hover::before {
-  content: '';
-  text-align: right;
-  box-sizing: border-box;
-  vertical-align: middle;
-  position: absolute;
-  top: 10rem;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url('../public/images/mdLogo.png');
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  transition: opacity 0.3s ease-in-out;
-  opacity: 1;
-  width: 50%;
-  height: 50%;
-}
-
-.content-item:hover::before {
-  opacity: 1;
-}
 
 /*
  * main
@@ -567,6 +332,11 @@ main {
 .menu,
 .reviews {
   font-size: medium;
+}
+
+.custom-image-size {
+  width: 500px;
+  height: 500px;
 }
 
 /*

@@ -1,5 +1,5 @@
+import LocalooksDataSource from '../../data/localooks-data';
 import UrlParser from '../../routes/url-parser';
-// import products from '../../data/products-data.json';
 
 const BrandProducts = {
   async render() {
@@ -9,9 +9,20 @@ const BrandProducts = {
   },
 
   async afterRender() {
+    const url = UrlParser.parseActiveUrlWithoutCombiner();
+    const { id } = url;
+
+    const detailElement = document.querySelector('brands-detail');
+    const detailProduct = (productById) => {
+      detailElement.products = productById;
+    };
+
+    LocalooksDataSource.getDetailAllProducts(id).then((product) => {
+      detailProduct(product.data);
+    });
+
     const navbar = document.querySelector('navigation-bar');
     navbar.classList.remove('hidden');
-
   },
 };
 
