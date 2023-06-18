@@ -7,6 +7,12 @@ const DrawerInitiator = {
     content.addEventListener('click', (event) => {
       this.closeDrawer(event, drawer);
     });
+
+    content.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter') {
+        this.closeDrawer(event, drawer);
+      }
+    });
   },
 
   toggleDrawer(event, drawer) {
