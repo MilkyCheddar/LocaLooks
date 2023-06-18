@@ -3,13 +3,12 @@ import AboutUs from '../views/pages/about-us';
 import BrandProducts from '../views/pages/brands-detail';
 import BrandList from '../views/pages/brands-catalogue';
 
-
 const routes = {
   '/': Home,
   '/home': Home,
   '/about-us': AboutUs,
   '/brands-catalogue': BrandList,
-  '/brands-catalogue/:id': BrandProducts, //later we added the id 
+  '/brands-catalogue/:id': BrandProducts, // later we added the id
   '*': 'NotFound',
 };
 

@@ -10,7 +10,9 @@ class AboutUs extends HTMLElement {
     // ambil data
     const dataTeam = DATA.teams;
     dataTeam.forEach((item) => {
+      /* eslint-disable-next-line no-console */
       console.log(item.name);
+      /* eslint-disable-next-line no-console */
       console.log(item.role);
     });
 
