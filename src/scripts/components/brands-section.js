@@ -24,7 +24,6 @@ class BrandsSection extends HTMLElement {
           </a>
         </div>
     </div>
-  </div>
       `;
 
     this.innerHTML = /* html */ `
@@ -48,14 +47,14 @@ class BrandsSection extends HTMLElement {
               </select>
             </div>
           </div>
-        </div>
-      </div>
-      ${item.map((data) => cardList(data)).reverse().join('')}
-      `;
+          <div class="cards">
+          ${item.map((data) => cardList(data)).reverse().join('')}
+            </div>
+            `;
     const sorting = this.querySelector('#SortBy');
     sorting.addEventListener('change', () => {
       const filteredCategory = item.filter((data) => data.category === sorting.value);
-      const card = document.querySelector('.carding');
+      const card = document.querySelector('.cards');
       card.innerHTML = filteredCategory.map((data) => cardList(data)).reverse().join('');
 
       if (sorting.value === 'Choose category...') {
