@@ -11,7 +11,6 @@ import '../styles/brands-list.css';
 import App from './views/app';
 import swRegister from './utils/sw-register';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 const skipToContent = document.querySelector('.skip-to-content');
 skipToContent.addEventListener('click', () => {

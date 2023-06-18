@@ -3,9 +3,9 @@ class BrandsDetail extends HTMLElement {
     this._product = product;
     this.render();
   }
-  
-    render() {
-      this.innerHTML =  `
+
+  render() {
+    this.innerHTML = `
       <section>
         <h2 class="brands_name">${this._product.productName}</h2>
         <div class="brands-detail">
@@ -32,8 +32,7 @@ class BrandsDetail extends HTMLElement {
       </div>  
       </section>
     `;
-    }
   }
-  
-  customElements.define('brands-detail', BrandsDetail);
-  
+}
+
+customElements.define('brands-detail', BrandsDetail);

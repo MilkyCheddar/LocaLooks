@@ -1,4 +1,4 @@
-import LocalooksDataSource from "../../data/localooks-data";
+import LocalooksDataSource from '../../data/localooks-data';
 
 const BrandList = {
   async render() {
@@ -17,11 +17,9 @@ const BrandList = {
     LocalooksDataSource.getAllProductsData().then((data) => {
       allProduct(data);
     });
-    
 
     const navbar = document.querySelector('navigation-bar');
     navbar.classList.remove('hidden');
-
   },
 };
 

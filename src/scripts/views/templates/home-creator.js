@@ -1,8 +1,8 @@
-import data from '../../../public/brands';
+import data from '../../../public/brands.json';
 
 const homeBrand = (selectedBrand) => {
+/* eslint-disable no-shadow */
   const brand = data.brands.find((brand) => brand.name === selectedBrand);
-
   return `
   <style>
   .brandPick {
@@ -33,10 +33,10 @@ const homeBrand = (selectedBrand) => {
     text-align: justify;
     vertical-align: middle;
   }
+
   .desc-${brand.id} h1{
     font-size: 1rem;
     color: black;
-
   }
 
   .content-detail-${brand.id} {
@@ -149,7 +149,7 @@ const homeBrand = (selectedBrand) => {
       <div class="desc-${brand.id}">
       <h1>${brand.description}</h1>
       <br>
-      <button class="btnDtl" href="#/brands-detail/${brand.id}" ><a class="no-underline" href="${brand.web}">Learn More..</a></button>
+      <button class="btnDtl" href="#/brands-detail/${brand.id}"><a class="no-underline" href="${brand.web}" target="_blank"">Learn More..</a></button>
         </div>
       </div>
   </div>
