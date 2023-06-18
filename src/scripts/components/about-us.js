@@ -38,6 +38,7 @@ class AboutUs extends HTMLElement {
 
     this.innerHTML = `
     <section>
+    <div class="about-container">
       <div class="jumbotron">
         <div class="jumbotron-overlay">
           <div class="jumbotron-inner">
@@ -53,6 +54,7 @@ class AboutUs extends HTMLElement {
       </div>
       <div class="cards-container">
         ${output}
+        </div>
       </div>
     </section>
     `;
