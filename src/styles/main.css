@@ -24,8 +24,7 @@ body {
  */
 
 .skip-to-content {
-  position: absolute;
-  top: -40px;
+  display:none;
   left: 0;
   padding: 8px;
   background-color: #2c9330;
@@ -34,7 +33,7 @@ body {
 }
 
 .skip-to-content:focus {
-  top: 0;
+  visibility: visible;
 }
 
 .headerInner {
