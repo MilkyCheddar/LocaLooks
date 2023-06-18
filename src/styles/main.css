@@ -24,7 +24,8 @@ body {
  */
 
 .skip-to-content {
-  display:none;
+  position: absolute;
+  top:-60px;
   left: 0;
   padding: 8px;
   background-color: #2c9330;
@@ -33,7 +34,7 @@ body {
 }
 
 .skip-to-content:focus {
-  visibility: visible;
+  top:0px;
 }
 
 .headerInner {
@@ -213,13 +214,16 @@ main {
  */
 
 footer {
-  padding: 2em;
+  padding: 4em;
   width: 100%;
   text-align: center;
   background-color: black;
+  height: 100%;
+  max-height: 150px;
 }
 
 footer h1 {
+  vertical-align: middle;
   font-size: 18px;
   color: wheat;
 }
