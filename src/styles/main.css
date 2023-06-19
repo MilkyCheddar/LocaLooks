@@ -143,15 +143,14 @@ body {
 
 #drawer {
   right: 0;
-  width: 100%;
-  height: 250px;
+  width: 250px;
   position: absolute;
   padding: 20px;
   display: none;
   z-index: 999;
 
   /* menyembunyikan #drawer -250px (sesuai dengan ukuran lebar drawer) ke kiri */
-  transform: translate(0, 0px);
+  transform: translate(0px, 0);
   transition: transform 0.3s ease-in-out;
   background-color:#000000;
 }

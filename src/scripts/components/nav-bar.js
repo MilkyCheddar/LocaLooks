@@ -23,7 +23,7 @@ class NavigationBar extends HTMLElement {
       <div id="drawer">
         <ul>
           <li class="drawerItem"><a href="/">Home</a></li>
-          <li class="drawerItem"><a href="#/brands-catalogue">Brands</a></li>
+          <li class="drawerItem"><a href="#/brands-catalogue">Catalogue</a></li>
           <li class="drawerItem"><a href="#/about-us">About Us</a></li>
         </ul>
       </div>
