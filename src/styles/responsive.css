@@ -7,22 +7,7 @@
   }
 }
 
-@media screen and (max-width: 750px) {
-  .cards{
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media screen and (max-width: 570px) {
-  .cards{
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
 
-@media screen and (max-width: 690px){
-  .brands-detail{
-    grid-template-columns: 1fr;
-  }
-}
 
 @media screen and (max-width: 911px) {
   #nav {
@@ -35,11 +20,7 @@
     }
   }
 }
-@media screen and (max-width: 1073px) {
-  .cards-container {
-  grid-template-columns: repeat(2, 1fr);
-  }
-}
+
   @media screen and (min-width: 911px) {
     #drawer {
       position: relative;

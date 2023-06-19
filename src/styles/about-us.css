@@ -125,6 +125,13 @@ li {
   grid-template-columns: repeat(4, 1fr);
 }
 
+@media screen and (max-width: 1073px) {
+  .cards-container {
+  grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
 .team-title {
   background-color: #fff;
 }
@@ -135,6 +142,7 @@ li {
   font-weight: 800;
   background-color: #fff;
 }
+
 
 .team-card {
   padding: 30px 30px;

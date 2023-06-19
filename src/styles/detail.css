@@ -7,6 +7,12 @@
     margin-left: 10px;
   }
 
+  @media screen and (max-width: 690px){
+    .brands-detail{
+      grid-template-columns: 1fr;
+    }
+  }
+
   .post-item {
     padding: 20px;
     display: flex;
@@ -45,10 +51,5 @@
     display: inline-block;
   }
 
-  .post-item__products,
-  .post-item__name,
-  .post-item__type,
-  .post-item__description {
-    margin: 10px 0;
-  }
+
   
